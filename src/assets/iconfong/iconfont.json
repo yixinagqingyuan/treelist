@@ -1,0 +1,303 @@
+{
+  "id": "3462405",
+  "name": "组件",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "13302950",
+      "name": "babel",
+      "font_class": "babel",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "17898907",
+      "name": "上传",
+      "font_class": "shangchuan1",
+      "unicode": "e691",
+      "unicode_decimal": 59025
+    },
+    {
+      "icon_id": "1264",
+      "name": "编辑",
+      "font_class": "bianji",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "4118038",
+      "name": "关闭",
+      "font_class": "guanbi",
+      "unicode": "eb6a",
+      "unicode_decimal": 60266
+    },
+    {
+      "icon_id": "6595567",
+      "name": "新增",
+      "font_class": "xinzeng",
+      "unicode": "e6a4",
+      "unicode_decimal": 59044
+    },
+    {
+      "icon_id": "11734501",
+      "name": "add_file,新建,新增,文件夹",
+      "font_class": "add_file",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "7594875",
+      "name": "24gf-folderOpen",
+      "font_class": "24gf-folderOpen",
+      "unicode": "eac5",
+      "unicode_decimal": 60101
+    },
+    {
+      "icon_id": "11882917",
+      "name": "bg-folder",
+      "font_class": "bg-folder",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "13301799",
+      "name": "word",
+      "font_class": "word",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "13301840",
+      "name": "powerpoint",
+      "font_class": "powerpoint",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "13301856",
+      "name": "word",
+      "font_class": "word1",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "13301872",
+      "name": "excel",
+      "font_class": "excel",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "13302908",
+      "name": "audio",
+      "font_class": "audio",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "13302915",
+      "name": "angular-resolver",
+      "font_class": "angular-resolver",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "13303086",
+      "name": "ejs",
+      "font_class": "ejs",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "13303092",
+      "name": "favicon",
+      "font_class": "favicon",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "13303093",
+      "name": "eslint",
+      "font_class": "eslint",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "13303095",
+      "name": "file",
+      "font_class": "file",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "13303102",
+      "name": "contributing",
+      "font_class": "contributing",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "13303106",
+      "name": "css",
+      "font_class": "css",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "13303116",
+      "name": "document",
+      "font_class": "document",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "13303484",
+      "name": "html",
+      "font_class": "html",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "13303493",
+      "name": "git",
+      "font_class": "git",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    },
+    {
+      "icon_id": "13303525",
+      "name": "javascript-map",
+      "font_class": "javascript-map",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "13303526",
+      "name": "json",
+      "font_class": "json",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "13303535",
+      "name": "less",
+      "font_class": "less",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "13303547",
+      "name": "mdx",
+      "font_class": "mdx",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "13303553",
+      "name": "image",
+      "font_class": "image",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "13303558",
+      "name": "javascript",
+      "font_class": "javascript",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "13303942",
+      "name": "nodejs",
+      "font_class": "nodejs",
+      "unicode": "e683",
+      "unicode_decimal": 59011
+    },
+    {
+      "icon_id": "13303947",
+      "name": "npm",
+      "font_class": "npm",
+      "unicode": "e685",
+      "unicode_decimal": 59013
+    },
+    {
+      "icon_id": "13303949",
+      "name": "nuxt",
+      "font_class": "nuxt",
+      "unicode": "e686",
+      "unicode_decimal": 59014
+    },
+    {
+      "icon_id": "13303952",
+      "name": "pdf",
+      "font_class": "pdf",
+      "unicode": "e687",
+      "unicode_decimal": 59015
+    },
+    {
+      "icon_id": "13304019",
+      "name": "react",
+      "font_class": "react1",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "13304020",
+      "name": "react_ts",
+      "font_class": "react_ts",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    },
+    {
+      "icon_id": "13304033",
+      "name": "python",
+      "font_class": "python",
+      "unicode": "e690",
+      "unicode_decimal": 59024
+    },
+    {
+      "icon_id": "13304056",
+      "name": "sass",
+      "font_class": "sass",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    },
+    {
+      "icon_id": "13304114",
+      "name": "typescript",
+      "font_class": "typescript",
+      "unicode": "e6a3",
+      "unicode_decimal": 59043
+    },
+    {
+      "icon_id": "13304136",
+      "name": "xml",
+      "font_class": "xml",
+      "unicode": "e6b2",
+      "unicode_decimal": 59058
+    },
+    {
+      "icon_id": "13304139",
+      "name": "video",
+      "font_class": "video",
+      "unicode": "e6b4",
+      "unicode_decimal": 59060
+    },
+    {
+      "icon_id": "13304145",
+      "name": "vue",
+      "font_class": "vue",
+      "unicode": "e6b9",
+      "unicode_decimal": 59065
+    },
+    {
+      "icon_id": "13304154",
+      "name": "zip",
+      "font_class": "zip",
+      "unicode": "e6be",
+      "unicode_decimal": 59070
+    }
+  ]
+}
