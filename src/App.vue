@@ -1,6 +1,7 @@
 <template>
   <div class="bg">
-    <fileSystem :selected="selected" :list="listArr" :draggable="true">
+    <fileSystem :selected="selected" :list="listArr" :draggable="true" @delete-node="onDeltet" @on-click="onClick"
+      @on-drop="drop" @change-name="onChangeName">
       <template #icon="{ item }">
         <template v-if="item.isFolder">
           <icon v-if="item.expanded" class="iconfont" iconName="icon-24gf-folderOpen"></icon>
@@ -18,17 +19,36 @@
   </div>
 </template>
 <script setup lang="ts">
+import { reactive, ref } from 'vue'
 import { list } from './list'
 import icon from './Icon/index.vue'
 import treeIcon from './Icon/treeIcon.vue'
-const selected = {
+const selected = ref({
   id: 3,
   pid: null,
   title: 'package.json',
   fileNameArr: ['src', 'dist', 'package.json', 'README.md'],
   isFolder: false
+})
+const listArr = reactive(list)
+//点击目录
+const onClick = (node) => {
+  selected.value = node
 }
-const listArr = list
+// 拖拽结束
+const drop = (node) => {
+  console.log(node)
+}
+
+//  修改名字
+const onChangeName = (node) => {
+  console.log(node)
+}
+// 删除
+const onDeltet = (node) => {
+  console.log(node)
+}
+
 </script>
 <style lang="scss" scoped>
 .bg {

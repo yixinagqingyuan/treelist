@@ -37,8 +37,9 @@
         <treeList @on-click="(depth) => $emit('onClick', depth)" @change-name="(depth) => $emit('changeName', depth)"
             @delete-node="(depth) => $emit('deleteNode', depth)" @add-node="(depth) => $emit('addNode', depth)"
             @on-drop="(depth) => $emit('onDrop', depth)" @add-folder="(depth) => $emit('addFolder', depth)"
-            @setDragEnterNode="setDragEnterNode" @setDragFile="setDragFile" @setDragFolder="setDragFolder"
-            v-for="newmodel in model.children" :selected="selected" :model="newmodel" :key="newmodel.id">
+            @dragStart="(depth) => $emit('dragStart', depth)" @setDragEnterNode="setDragEnterNode"
+            @setDragFile="setDragFile" @setDragFolder="setDragFolder" v-for="newmodel in model.children"
+            :selected="selected" :model="newmodel" :key="newmodel.id">
             <template #icon="slotProps">
                 <slot name="icon" v-bind="slotProps"></slot>
             </template>
@@ -99,9 +100,9 @@ let lastenter = null;
 // 删除目录
 const delNode = () => {
     emit('deleteNode', {
-        id: props.model.id,
+        ...props.model,
         eventType: 'delete',
-        isFolder: isFolder.value
+
     })
 }
 // 选中effect
@@ -121,6 +122,7 @@ const setEditable = () => {
 // 修改目录名字
 const setUnEditable = (e) => {
     editable.value = false
+    props.model.title = e.target.value
     emit('changeName', {
         id: props.model.id,
         pid: props.model.pid,
@@ -136,7 +138,6 @@ const toggle = () => {
         expanded.value = !expanded.value
     } else {
         emit('onClick', {
-            toggle: toggle,
             ...props.model
         })
     }
@@ -165,8 +166,9 @@ const addChildDocument = (node) => {
 }
 // 拖拽开始
 const dragStart = () => {
+    console.log(0)
     emit('dragStart', {
-        node: props.model
+        ...props.model
     })
 }
 const dragOver = (e) => {
@@ -209,11 +211,15 @@ const drop = (e) => {
     emit('setDragFile', false)
     // 为了获取路径需要判断是不是文件夹，如果不是文件夹向上找
     if (isFolder.value) {
-        emit('onDrop', {
-            target: props.model,
-        })
+        emit('onDrop', props.model
+        )
     } else {
-        emit('setDragFolder')
+        if (props.model.pid) {
+            emit('setDragFolder')
+        } else {
+            emit('onDrop', props.model)
+        }
+
     }
 
 }
@@ -225,9 +231,7 @@ const setDragFile = (bol) => {
 }
 // 找到文件夹
 const setDragFolder = () => {
-    emit('onDrop', {
-        target: props.model,
-    })
+    emit('onDrop', props.model)
 }
 </script>
 <style lang="scss">
